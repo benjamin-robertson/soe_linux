@@ -13,6 +13,6 @@ class soe_linux::sudo (
 
   $final_rules = $config + $platform_sudo_rules
   file { '/tmp/finalsudo.txt':
-    content => $final_rules,
+    content => "${final_rules}",
   }
 }
