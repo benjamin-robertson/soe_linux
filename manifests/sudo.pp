@@ -8,4 +8,6 @@ class soe_linux::sudo (
   Hash $config,
 ) {
   notify{"soe_linux sudo has is ${config}":}
+  $platform_sudo_rules = lookup('platform_module::sudo')
+  notify{"soe_linux lookup platform rules ${platform_sudo_rules}":}
 }
