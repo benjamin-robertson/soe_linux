@@ -4,5 +4,8 @@
 #
 # @example
 #   include soe_linux::sudo
-class soe_linux::sudo {
+class soe_linux::sudo (
+  Hash $config,
+) {
+  notify{"soe_linux sudo has is ${config}":}
 }
