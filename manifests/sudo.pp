@@ -17,9 +17,9 @@ class soe_linux::sudo (
   #   $final_rules = $config
   # }
 
-  file { '/tmp/finalsudo.txt':
-    content => $final_rules.convert_to(String),
-  }
+  # file { '/tmp/finalsudo.txt':
+  #   content => $final_rules.convert_to(String),
+  # }
 
   package {'telnet':
     ensure => absent,
