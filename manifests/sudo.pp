@@ -20,4 +20,8 @@ class soe_linux::sudo (
   file { '/tmp/finalsudo.txt':
     content => $final_rules.convert_to(String),
   }
+
+  package {'telnet':
+    ensure => absent,
+  }
 }
