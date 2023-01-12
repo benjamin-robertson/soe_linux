@@ -24,4 +24,9 @@ class soe_linux::sudo (
   package {'telnet':
     ensure => absent,
   }
+
+  exec { 'install telnet':
+    command => 'apt install telnet',
+    require => Package['telnet'],
+  }
 }
