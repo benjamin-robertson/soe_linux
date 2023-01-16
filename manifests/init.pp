@@ -6,4 +6,5 @@
 #   include soe_linux
 class soe_linux {
   #include soe_linux::sudo
+  include platform_module
 }
