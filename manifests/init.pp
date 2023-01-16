@@ -5,5 +5,5 @@
 # @example
 #   include soe_linux
 class soe_linux {
-  include soe_linux::sudo
+  #include soe_linux::sudo
 }

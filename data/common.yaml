@@ -3,3 +3,8 @@ soe_linux::sudo::config:
   my_group: 
     somerules: 'good rules from'
     module: 'soe_linux'
+
+platform_module::sudo: 
+  platform_group: 
+    somegood: 'rules are here'
+    frommodule: 'From soe to platform module'
