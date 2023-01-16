@@ -4,7 +4,11 @@
 #
 # @example
 #   include soe_linux
-class soe_linux {
+class soe_linux (
+  Hash $sudo,
+) {
   #include soe_linux::sudo
-  include platform_module
+  class  {'platform_module':
+    sudo => $sudo,
+  }
 }

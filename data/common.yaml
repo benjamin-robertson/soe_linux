@@ -4,7 +4,7 @@ soe_linux::sudo::config:
     somerules: 'good rules from'
     module: 'soe_linux'
 
-platform_module::sudo: 
+soe_linux::sudo:
   platform_group: 
     somegood: 'rules are here'
     frommodule: 'From soe to platform module'
