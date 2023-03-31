@@ -9,8 +9,12 @@ class soe_linux::sudo (
 ) {
   # notify{"soe_linux sudo hash is ${config}":}
 
+  # file { '/tmp/finalsudo.txt':
+  #   content => "${config}",
+  # }
+
   file { '/tmp/finalsudo.txt':
-    content => "${config}",
+    ensure => absent,
   }
 
   # package {'telnet':
