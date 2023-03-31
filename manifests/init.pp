@@ -7,8 +7,5 @@
 class soe_linux (
   Hash $sudo,
 ) {
-  #include soe_linux::sudo
-  class  {'platform_module':
-    sudo => $sudo,
-  }
+  include soe_linux::sudo
 }
