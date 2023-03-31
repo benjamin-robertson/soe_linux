@@ -7,7 +7,7 @@
 class soe_linux::sudo (
   Hash $config,
 ) {
-  notify{"soe_linux sudo hash is ${config}":}
+  # notify{"soe_linux sudo hash is ${config}":}
 
   file { '/tmp/finalsudo.txt':
     content => "${config}",
