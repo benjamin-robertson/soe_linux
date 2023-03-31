@@ -2,7 +2,7 @@
 soe_linux::sudo::config:
   my_group: 
     somerules: 'good rules from'
-    module: 'soe_linux'
+    module: 'soe_linux some change'
 
 soe_linux::sudo:
   platform_group: 
